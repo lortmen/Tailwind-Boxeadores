@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de productos para boxeadores. Encuentra guantes, ropa, protectores y más.">
+    <title>Tienda Boxeadores</title>
+    <!-- Importación de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-red-800 text-white p-4 md:p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">Tienda Boxeadores</h1>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#home" class="hover:underline">Inicio</a></li>
+                    <li><a href="#tienda" class="hover:underline">Tienda</a></li>
+                    <li><a href="#info" class="hover:underline">Información</a></li>
+                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-80 md:h-screen text-white flex items-center" style="background-image: url('img/hero.webp');">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-2 md:mb-4">Todo lo que un boxeador necesita</h2>
+            <p class="text-base md:text-lg mb-4 md:mb-8">Compra los mejores productos para entrenar y competir al máximo nivel.</p>
+            <a href="#tienda" class="bg-red-600 px-4 md:px-6 py-2 md:py-3 text-white font-semibold rounded-md hover:bg-red-700 transition">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Tienda -->
+    <section id="tienda" class="container mx-auto py-12 md:py-16 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <!-- Producto 1 -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <img src="img/guantes.webp" alt="Guantes de boxeo" class="w-full h-40 md:h-48 object-cover rounded-md">
+                <h3 class="text-xl font-bold mt-4">Guantes de Boxeo</h3>
+                <p class="text-gray-600 mt-2">Guantes de alta calidad para entrenamientos y competiciones.</p>
+                <p class="text-xl font-bold mt-4">$50.00</p>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-md mt-4 hover:bg-red-700 transition">Añadir al carrito</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <img src="img/guantes.webp" alt="Ropa de boxeo" class="w-full h-40 md:h-48 object-cover rounded-md">
+                <h3 class="text-xl font-bold mt-4">Ropa Deportiva</h3>
+                <p class="text-gray-600 mt-2">Ropa ligera y resistente, diseñada especialmente para boxeadores.</p>
+                <p class="text-xl font-bold mt-4">$30.00</p>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-md mt-4 hover:bg-red-700 transition">Añadir al carrito</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <img src="img/guantes.webp" alt="Protector bucal" class="w-full h-40 md:h-48 object-cover rounded-md">
+                <h3 class="text-xl font-bold mt-4">Protector Bucal</h3>
+                <p class="text-gray-600 mt-2">Protección dental de alta resistencia para tu seguridad en el ring.</p>
+                <p class="text-xl font-bold mt-4">$15.00</p>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-md mt-4 hover:bg-red-700 transition">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section id="info" class="bg-gray-200 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">¿Por qué elegir nuestros productos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600">Calidad Garantizada</h3>
+                    <p class="text-gray-600 mt-4">Nuestros productos están fabricados con los mejores materiales, ofreciendo durabilidad y confort.</p>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600">Experiencia Profesional</h3>
+                    <p class="text-gray-600 mt-4">Llevamos años trabajando con los mejores boxeadores para ofrecer productos que realmente marcan la diferencia.</p>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-red-600">Envío Rápido</h3>
+                    <p class="text-gray-600 mt-4">Disfruta de nuestro servicio de entrega rápida, para que puedas tener tus productos cuando más los necesitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="container mx-auto py-12 md:py-16 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Contáctanos</h2>
+        <form class="max-w-lg mx-auto bg-white p-6 md:p-8 shadow-md rounded-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-lg font-semibold">Nombre</label>
+                <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Tu nombre">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-lg font-semibold">Email</label>
+                <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Tu email">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-lg font-semibold">Mensaje</label>
+                <textarea id="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-red-600 text-white p-3 rounded-md hover:bg-red-700 transition">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 md:py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Tienda Boxeadores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
